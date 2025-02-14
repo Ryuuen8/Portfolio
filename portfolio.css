@@ -75,7 +75,7 @@ section {
   align-items: center;
   text-align: center;
   padding: 20px;
-  position: relative; /* Ensures the glow can be on top */
+  position: relative;
 }
 
 /* Home Section */
@@ -196,4 +196,92 @@ section {
   padding: 40px;
   text-align: center;
   opacity: 0.7;
+}
+
+/* Responsive Design (Mobile First) */
+@media (max-width: 768px) {
+  /* Navigation Bar */
+  .nav-container {
+    padding: 10px 0;
+  }
+
+  .links a button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* Home Section */
+  #homeSec .texthome-container h1 {
+    font-size: 36px;
+  }
+
+  #homeSec .texthome-container h2 {
+    font-size: 20px;
+  }
+
+  #homeSec .texthome-container p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  /* About Section */
+  .about-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-text,
+  .about-skills {
+    width: 100%;
+  }
+
+  .about-skills {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .about-skills ul li {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navigation Bar */
+  .links a button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  /* Home Section */
+  #homeSec .texthome-container h1 {
+    font-size: 28px;
+  }
+
+  #homeSec .texthome-container h2 {
+    font-size: 18px;
+  }
+
+  #homeSec .texthome-container p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  /* About Section */
+  .about-container {
+    padding: 15px;
+  }
+
+  /* Blog Card */
+  .card-container {
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
 }
